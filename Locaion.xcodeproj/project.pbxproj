@@ -22,6 +22,9 @@
 		F9CEEA9B18BDFD75002505B8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CEEA7F18BDFD75002505B8 /* CoreData.framework */; };
 		F9CEEAA318BDFD75002505B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9CEEAA118BDFD75002505B8 /* InfoPlist.strings */; };
 		F9CEEAA518BDFD75002505B8 /* LocaionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CEEAA418BDFD75002505B8 /* LocaionTests.m */; };
+		F9CEEAB118BDFE1B002505B8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CEEAAF18BDFE1B002505B8 /* RootViewController.m */; };
+		F9CEEAB218BDFE1B002505B8 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CEEAB018BDFE1B002505B8 /* RootViewController.xib */; };
+		F9CEEAB518BE0818002505B8 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CEEAB418BE0818002505B8 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		F9CEEAA018BDFD75002505B8 /* LocaionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocaionTests-Info.plist"; sourceTree = "<group>"; };
 		F9CEEAA218BDFD75002505B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F9CEEAA418BDFD75002505B8 /* LocaionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocaionTests.m; sourceTree = "<group>"; };
+		F9CEEAAE18BDFE1B002505B8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ../RootViewController.h; sourceTree = "<group>"; };
+		F9CEEAAF18BDFE1B002505B8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ../RootViewController.m; sourceTree = "<group>"; };
+		F9CEEAB018BDFE1B002505B8 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = ../RootViewController.xib; sourceTree = "<group>"; };
+		F9CEEAB318BE0818002505B8 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		F9CEEAB418BE0818002505B8 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +123,15 @@
 		F9CEEA8118BDFD75002505B8 /* Locaion */ = {
 			isa = PBXGroup;
 			children = (
+				F9CEEAAE18BDFE1B002505B8 /* RootViewController.h */,
+				F9CEEAAF18BDFE1B002505B8 /* RootViewController.m */,
+				F9CEEAB018BDFE1B002505B8 /* RootViewController.xib */,
 				F9CEEA8A18BDFD75002505B8 /* AppDelegate.h */,
 				F9CEEA8B18BDFD75002505B8 /* AppDelegate.m */,
 				F9CEEA9018BDFD75002505B8 /* Images.xcassets */,
 				F9CEEA8D18BDFD75002505B8 /* Locaion.xcdatamodeld */,
+				F9CEEAB318BE0818002505B8 /* Event.h */,
+				F9CEEAB418BE0818002505B8 /* Event.m */,
 				F9CEEA8218BDFD75002505B8 /* Supporting Files */,
 			);
 			path = Locaion;
@@ -230,6 +243,7 @@
 			files = (
 				F9CEEA8618BDFD75002505B8 /* InfoPlist.strings in Resources */,
 				F9CEEA9118BDFD75002505B8 /* Images.xcassets in Resources */,
+				F9CEEAB218BDFE1B002505B8 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +264,8 @@
 			files = (
 				F9CEEA8F18BDFD75002505B8 /* Locaion.xcdatamodeld in Sources */,
 				F9CEEA8C18BDFD75002505B8 /* AppDelegate.m in Sources */,
+				F9CEEAB518BE0818002505B8 /* Event.m in Sources */,
+				F9CEEAB118BDFE1B002505B8 /* RootViewController.m in Sources */,
 				F9CEEA8818BDFD75002505B8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

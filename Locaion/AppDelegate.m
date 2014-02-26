@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+
 
 @implementation AppDelegate
 
@@ -19,6 +21,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    NSManagedObjectContext* context = self.managedObjectContext;
+    
+    RootViewController* rootViewController = [[RootViewController alloc] init];
+    rootViewController.managedObjectContext = context;
+    
+    UINavigationController* navController = [[UINavigationController alloc] init];
+    [navController pushViewController:rootViewController animated:NO];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -104,7 +115,7 @@
     }
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Locaion.sqlite"];
-    
+    //[[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
